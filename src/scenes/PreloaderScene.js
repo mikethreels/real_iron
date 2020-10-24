@@ -12,7 +12,29 @@ export default class PreloaderScene extends Phaser.Scene {
   preload () {
     // add logo image
     this.add.image(400, 200, 'logo2');
-    
+
+    // load in assets
+    this.load.image('sky', '../assets/background/skill-desc_0003_bg.png');
+    this.load.image('buildings', '../assets/background/skill-desc_0001_buildings.png');
+    this.load.image('farBuildings', '../assets/background/skill-desc_0002_far-buildings.png');
+    this.load.image('foreground', '../assets/background/skill-desc_0000_foreground.png');
+    this.load.image('ground', '../assets/background/platform.png');
+    this.load.image('collect1', '../assets/collect/brawlbot_arm_fist_l.png')
+    this.load.image('collect2', '../assets/collect/brawlbot_chest.png')
+    this.load.image('collect3', '../assets/collect/brawlbot_head.png')
+    this.load.image('collect4', '../assets/collect/brawlbot_leg_foot_l.png')
+    this.load.image('collect5', '../assets/collect/brawlbot_pelvis.png')
+    this.load.image('star', '../assets/collect/star.png');
+    this.load.image('invisibleWall', '../assets/background/invisible_wall.png')
+    this.load.spritesheet('bomb', 
+        '../assets/enemy/hoverbot1sheet.png',
+        { frameWidth: 28, frameHeight: 30 }
+    );
+    this.load.spritesheet('dude', 
+        '../assets/player/dude.png',
+        { frameWidth: 62, frameHeight: 62 }
+    );
+
     var progressBar = this.add.graphics();
     var progressBox = this.add.graphics();
     progressBox.fillStyle(0x222222, 0.8);
