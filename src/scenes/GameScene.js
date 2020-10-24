@@ -1,5 +1,8 @@
 import 'phaser';
-import { Preload } from './PreloaderScene'; 
+import createAligned from '../entities/createAligned'
+import createGround from '../entities/createGround'
+import createStars from '../entities/createStars'
+import createBots from '../entities/createBots'
 
 export default class GameScene extends Phaser.Scene {
   constructor () {
