@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const base = require('./base');
 module.exports = merge(base, {
    mode: 'production',
-   output: {    
+   output: {         
       filename: 'bundle.min.js',
    },  
    devtool: false,

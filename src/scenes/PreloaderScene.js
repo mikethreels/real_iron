@@ -87,6 +87,26 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('box', '../src/assets/ui/grey_box.png');
     this.load.image('checkedBox', '../src/assets/ui/blue_boxCheckmark.png');
     this.load.audio('bgMusic', ['../src/assets/TownTheme.mp3']);
+    this.load.image('sky', '../src/assets/skill-desc_0003_bg.png');
+    this.load.image('buildings', '../src/assets/skill-desc_0001_buildings.png');
+    this.load.image('farBuildings', '../src/assets/skill-desc_0002_far-buildings.png');
+    this.load.image('foreground', '../src/assets/skill-desc_0000_foreground.png');
+    this.load.image('ground', '../src/assets/platform.png');
+    this.load.image('collect1', '../src/assets/brawlbot_arm_fist_l.png')
+    this.load.image('collect2', '../src/assets/brawlbot_chest.png')
+    this.load.image('collect3', '../src/assets/brawlbot_head.png')
+    this.load.image('collect4', '../src/assets/brawlbot_leg_foot_l.png')
+    this.load.image('collect5', '../src/assets/brawlbot_pelvis.png')
+    this.load.image('star', '../src/assets/star.png');
+    this.load.image('invisibleWall', '../src/assets/invisible_wall.png')
+    this.load.spritesheet('bomb', 
+        '../src/assets/hoverbot1sheet.png',
+        { frameWidth: 28, frameHeight: 30 }
+    );
+    this.load.spritesheet('dude', 
+        '../src/assets/dude.png',
+        { frameWidth: 62, frameHeight: 62 }
+    );
   }
 
   ready () {

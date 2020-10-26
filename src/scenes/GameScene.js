@@ -1,8 +1,8 @@
 import 'phaser';
-import createAligned from '../entities/createAligned'
-import createGround from '../entities/createGround'
-import createStars from '../entities/createStars'
-import createBots from '../entities/createBots'
+import { createAligned } from '../objects/createAligned'
+import { createGround } from '../objects/createGround'
+import { createStars } from '../objects/createStars'
+import { createBots } from '../objects/createBots'
 
 export default class GameScene extends Phaser.Scene {
   constructor () {
@@ -19,32 +19,14 @@ export default class GameScene extends Phaser.Scene {
   }
  
   preload () {
-    this.load.image('sky', '../assets/background/skill-desc_0003_bg.png');
-    this.load.image('buildings', '../assets/background/skill-desc_0001_buildings.png');
-    this.load.image('farBuildings', '../assets/background/skill-desc_0002_far-buildings.png');
-    this.load.image('foreground', '../assets/background/skill-desc_0000_foreground.png');
-    this.load.image('ground', '../assets/background/platform.png');
-    this.load.image('collect1', '../assets/collect/brawlbot_arm_fist_l.png')
-    this.load.image('collect2', '../assets/collect/brawlbot_chest.png')
-    this.load.image('collect3', '../assets/collect/brawlbot_head.png')
-    this.load.image('collect4', '../assets/collect/brawlbot_leg_foot_l.png')
-    this.load.image('collect5', '../assets/collect/brawlbot_pelvis.png')
-    this.load.image('star', '../assets/collect/star.png');
-    this.load.image('invisibleWall', '../assets/background/invisible_wall.png')
-    this.load.spritesheet('bomb', 
-        '../assets/enemy/hoverbot1sheet.png',
-        { frameWidth: 28, frameHeight: 30 }
-    );
-    this.load.spritesheet('dude', 
-        '../assets/player/dude.png',
-        { frameWidth: 62, frameHeight: 62 }
-    );
+  
   }
  
   create () {
     const width = this.scale.width;
     const height = this.scale.height
-    createAligned(this, 1, 'sky', 0, 4.2)
+
+    const sky = createAligned(this, 1, 'sky', 0, 4.2)
   
     createAligned(this, 3, 'farBuildings', 0.33, 4)
   
@@ -130,7 +112,7 @@ export default class GameScene extends Phaser.Scene {
         .setScrollFactor(0);
         this.over.setText("Game Over");
   
-        gameOver = true;
+       
     }
     var x = (this.player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
     createBots(this.bots, 'bomb', 1000);
