@@ -9,7 +9,6 @@ export const createGround = (object, count, texture, counter, wall, wallImg) => 
       wall.create(dist -230, height + -10, wallImg).setVisible(false);
       next += obj.width * 2
       counter++
-      console.log(dist)
 
   }
 };

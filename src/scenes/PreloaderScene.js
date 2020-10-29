@@ -91,6 +91,7 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('buildings', '../src/assets/skill-desc_0001_buildings.png');
     this.load.image('farBuildings', '../src/assets/skill-desc_0002_far-buildings.png');
     this.load.image('foreground', '../src/assets/skill-desc_0000_foreground.png');
+    this.load.image('cityforeground', '../src/assets/CityBackground/City_Foreground.png');
     this.load.image('ground', '../src/assets/platform.png');
     this.load.image('collect1', '../src/assets/brawlbot_arm_fist_l.png')
     this.load.image('collect2', '../src/assets/brawlbot_chest.png')
@@ -99,6 +100,8 @@ export default class PreloaderScene extends Phaser.Scene {
     this.load.image('collect5', '../src/assets/brawlbot_pelvis.png')
     this.load.image('star', '../src/assets/star.png');
     this.load.image('invisibleWall', '../src/assets/invisible_wall.png')
+    this.load.html('form_for_username', '../src/assets/form.html')
+    this.load.bitmapFont('arcade', '../src/assets/arcade.png', '../src/assets/arcade.xml');
     this.load.spritesheet('bomb', 
         '../src/assets/hoverbot1sheet.png',
         { frameWidth: 28, frameHeight: 30 }

@@ -15,7 +15,7 @@ export default class GameScene extends Phaser.Scene {
     this.scoreText = null;
     this.bots = null;
     this.cursors = null;
-    this.over = null;
+    this.over = false;
   }
  
   preload () {
@@ -24,7 +24,7 @@ export default class GameScene extends Phaser.Scene {
  
   create () {
     const width = this.scale.width;
-    const height = this.scale.height
+    const height = this.scale.height;
 
     const sky = createAligned(this, 1, 'sky', 0, 4.2)
   
@@ -100,20 +100,14 @@ export default class GameScene extends Phaser.Scene {
         enemy.xSpeed*=-1;
       }	
     }
-    function hitBomb (player, bomb)
+    function hitBomb ()
     {
-        this.physics.pause();
-  
-        player.setTint(0xff0000);
-  
-        player.anims.play('turn');
-  
-        this.over = this.add.text(300, 300, 'score: 0', { fontSize: '50px', fill: 'red' })
-        .setScrollFactor(0);
-        this.over.setText("Game Over");
-  
-       
+      this.over = true;
     }
+
+    // this.button.on('pointerdown', function () {
+    //   this.scene.scene.start(targetScene);
+    // }.bind(this));
     var x = (this.player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
     createBots(this.bots, 'bomb', 1000);
     
@@ -122,14 +116,14 @@ export default class GameScene extends Phaser.Scene {
   update (){
     if (this.cursors.left.isDown)
     {
-        this.player.setVelocityX(-240);
+        this.player.setVelocityX(-640);
         this.player.flipX = true;
         this.player.anims.play('left', true);
     }
     else if (this.cursors.right.isDown)
     {
    
-        this.player.setVelocityX(240);
+        this.player.setVelocityX(640);
         this.player.flipX = false;
         this.player.anims.play('right', true);
     }
@@ -147,7 +141,14 @@ export default class GameScene extends Phaser.Scene {
     if (Phaser.Input.Keyboard.JustDown(this.cursors.up) && this.cursors.up.isDown && this.player.jumpCount < 2){
       this.player.jumpCount ++;
       this.player.setVelocityY(-440);
-    }  
+    }
+    
+    if (this.over){
+      console.log(this.score)
+      localStorage.setItem('score', this.score);
+      this.over = false;
+      this.scene.start('GameOver');
+    }
   };
 
 };

@@ -1,5 +1,6 @@
 import 'phaser';
 import config from '../Config/config';
+import { createAligned } from '../objects/createAligned';
 
 export default class CreditsScene extends Phaser.Scene {
   constructor () {
@@ -7,8 +8,10 @@ export default class CreditsScene extends Phaser.Scene {
   }
  
   create () {
-    this.creditsText = this.add.text(0, 0, 'Credits', { fontSize: '32px', fill: '#fff' });
-    this.madeByText = this.add.text(0, 0, 'Created By: Michael Threels', { fontSize: '26px', fill: '#fff' });
+    this.cameras.main.setBackgroundColor('#fff');
+    createAligned(this, 3, 'cityforeground', 0, 1)
+    this.creditsText = this.add.text(0, 0, 'Credits', { fontSize: '32px', fill: '#000' });
+    this.madeByText = this.add.text(0, 0, 'Created By: Michael Threels', { fontSize: '26px', fill: '#000' });
     this.zone = this.add.zone(config.width/2, config.height/2, config.width, config.height);
     
     Phaser.Display.Align.In.Center(

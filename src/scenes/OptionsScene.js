@@ -1,5 +1,6 @@
 import 'phaser';
 import Button from '../Objects/Button';
+import { createAligned } from '../objects/createAligned';
  
 export default class OptionsScene extends Phaser.Scene {
   constructor () {
@@ -7,14 +8,23 @@ export default class OptionsScene extends Phaser.Scene {
   }
 
   create () {	
+    this.cameras.main.setBackgroundColor('#fff');
+    createAligned(this, 3, 'cityforeground', 0, 1)
+
     this.model = this.sys.game.globals.model;
     
     this.text = this.add.text(300, 100, 'Options', { fontSize: 40 });
     this.musicButton = this.add.image(200, 200, 'checkedBox');
-    this.musicText = this.add.text(250, 190, 'Music Enabled', { fontSize: 24 });
+    this.musicText = this.add.text(250, 190, 'Music Enabled', { 
+      fontSize: 24,
+      fill: '#000',
+    });
     
     this.soundButton = this.add.image(200, 300, 'checkedBox');
-    this.soundText = this.add.text(250, 290, 'Sound Enabled', { fontSize: 24 });
+    this.soundText = this.add.text(250, 290, 'Sound Enabled', { 
+      fontSize: 24,
+      fill: '#000',
+    });
     
     this.musicButton.setInteractive();
     this.soundButton.setInteractive();
