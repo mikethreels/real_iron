@@ -5,7 +5,7 @@ export default {
   parent: 'phaser-example',
   width: 800,
   height: 600,
-  // autoCenter: Phaser.Scale.CENTER_BOTH,
+  autoCenter: Phaser.Scale.CENTER_BOTH,
   backgroundColor: 'black',
   parent: 'phaser-container',
   dom: {
