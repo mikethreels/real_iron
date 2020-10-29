@@ -9,7 +9,7 @@ import OptionsScene from './Scenes/OptionsScene';
 import SubmitScore from './Scenes/submitScene';
 import CreditsScene from './Scenes/CreditsScene';
 import Model from './Model';
-import Leaderboard from './scenes/LeaderBoard'
+import Leaderboard from './Scenes/LeaderBoard'
  
 class Game extends Phaser.Game {
   constructor () {
