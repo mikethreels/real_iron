@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
-import Btn from '../objects/Button';
-import ApiModule from '../objects/apiData';
-import Button from '../objects/Button';
+import Btn from '../objects/button';
+import ApiModule from '../objects/api_data';
+import Button from '../objects/button';
 
 
 class Leaderboard extends Phaser.Scene {

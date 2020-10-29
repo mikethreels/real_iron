@@ -1,6 +1,6 @@
 import 'phaser';
 import config from '../config/config';
-import { createAligned } from '../objects/createAligned';
+import { createAligned } from '../objects/create_aligned';
 
 export default class CreditsScene extends Phaser.Scene {
   constructor () {

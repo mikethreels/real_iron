@@ -1,7 +1,7 @@
 import 'phaser';
 import config from '../config/config';
-import Button from '../Objects/Button';
-import { createAligned } from '../objects/createAligned'
+import Button from '../objects/button';
+import { createAligned } from '../objects/create_aligned'
  
 export default class TitleScene extends Phaser.Scene {
   constructor () {

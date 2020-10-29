@@ -1,8 +1,8 @@
 import 'phaser';
-import { createAligned } from '../objects/createAligned'
-import { createGround } from '../objects/createGround'
-import { createStars } from '../objects/createStars'
-import { createBots } from '../objects/createBots'
+import { createAligned } from '../objects/create_aligned'
+import { createGround } from '../objects/create_ground'
+import { createStars } from '../objects/create_stars'
+import { createBots } from '../objects/create_bots'
 
 export default class GameScene extends Phaser.Scene {
   constructor () {

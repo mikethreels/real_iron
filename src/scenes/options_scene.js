@@ -1,6 +1,6 @@
 import 'phaser';
-import Button from '../Objects/Button';
-import { createAligned } from '../objects/createAligned';
+import Button from '../objects/button';
+import { createAligned } from '../objects/create_aligned';
  
 export default class OptionsScene extends Phaser.Scene {
   constructor () {

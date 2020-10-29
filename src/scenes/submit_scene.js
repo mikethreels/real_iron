@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
-import ApiModule from '../objects/apiData';
-import { createAligned } from '../objects/createAligned';
+import ApiModule from '../objects/api_data';
+import { createAligned } from '../objects/create_aligned';
 
 export default class SubmitScore extends Phaser.Scene {
   constructor() {
