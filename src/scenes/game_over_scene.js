@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import 'phaser';
 import config from '../config/config';
 import Button from '../objects/button';
@@ -10,9 +11,10 @@ export default class GameOverScene extends Phaser.Scene {
 
   create() {
     this.cameras.main.setBackgroundColor('#fff');
-    createAligned(this, 3, 'cityforeground', 0, 1)
+    createAligned(this, 3, 'cityforeground', 0, 1);
+    this.add.image(400, 100, 'white_logo').setScale(0.5);
     const score = localStorage.getItem('score');
-    this.last = this.add.text(0, 0, `Game Over`, {
+    this.last = this.add.text(0, 0, 'Game Over', {
       fontSize: '35px',
       fill: '#000',
       backgoundColor: '#fff',
@@ -37,27 +39,9 @@ export default class GameOverScene extends Phaser.Scene {
       this.last,
       this.zone,
     );
-    
-    
-    // const scoreText = this.add.text(0, -40, `Score: ${score}`, {
-    //   fontSize: '32px',
-    //   fill: '#fff',
-    //   backgroundColor: '#fff',
-    //   align: 'center',
-    // });
-    
 
-    // const textScore = localStorage.getItem('score') !== null ? JSON.parse(localStorage.getItem('score')) : 0;
-    // scoreText.setText(`Score: ${textScore}`);
     this.scoreBtn = new Button(this, config.width / 2, config.height / 2 + 50, 'blueButton1', 'blueButton2', 'Submit', 'SubmitScore');
     this.gameBtn = new Button(this, config.width / 2, config.height / 2 + 125, 'blueButton1', 'blueButton2', 'Menu', 'Title');
     this.leaderboardBtn = new Button(this, config.width / 2, config.height / 2 + 200, 'blueButton1', 'blueButton2', 'Scores', 'Leaderboard');
-
-    // Phaser.Display.Align.In.Center(
-    //   scoreText,
-    //   this.scoreBtn,
-    //   0,
-    //   -75,
-    // );
   }
 }

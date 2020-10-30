@@ -1,15 +1,17 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import 'jest-canvas-mock';
 import 'phaser';
-import { GameScene } from '../../scenes/GameScene';
-import { GameOverScene } from '../../Scenes/GameOverScene'
-import { BootScene } from '../../Scenes/BootScene';
-import { PreloaderScene } from '../../Scenes/PreloaderScene';
-import { TitleScene } from '../../Scenes/TitleScene';
-import { OptionsScene } from '../../Scenes/OptionsScene';
-import { SubmitScore } from '../../Scenes/submitScene';
-import { CreditsScene } from '../../Scenes/CreditsScene';
-import { Model } from '../../Model';
-import { Leaderboard } from '../../scenes/LeaderBoard'
+import { GameScene } from '../../scenes/game_scene';
+import { GameOverScene } from '../../scenes/game_over_scene';
+import { BootScene } from '../../scenes/boot_scene';
+import { PreloaderScene } from '../../scenes/preloader_scene';
+import { TitleScene } from '../../scenes/title_scene';
+import { OptionsScene } from '../../scenes/options_scene';
+import { SubmitScore } from '../../scenes/submit_scene';
+import { CreditsScene } from '../../scenes/credits_scene';
+import { Model } from '../../model';
+import { Leaderboard } from '../../scenes/leader_board';
+
 const game = (() => {
   const config = {
     type: Phaser.AUTO,

@@ -1,7 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable guard-for-in */
 import 'regenerator-runtime';
 
 const fetch = require('node-fetch');
+
 const key = '1C4G19zPgx5MVBx9aKCm';
 const URI = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
 const ApiModule = (() => {
@@ -11,7 +13,7 @@ const ApiModule = (() => {
     const data = {
       method: 'POST',
       mode: 'cors',
-      headers: {  
+      headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
@@ -19,7 +21,6 @@ const ApiModule = (() => {
     };
     const resp = await fetch(api, data);
     const res = await resp.json();
-    console.log(res);
     return res;
   };
 

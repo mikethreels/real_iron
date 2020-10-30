@@ -1,5 +1,5 @@
+/* eslint-disable no-alert */
 import Phaser from 'phaser';
-import Btn from '../objects/button';
 import ApiModule from '../objects/api_data';
 import Button from '../objects/button';
 
@@ -11,7 +11,6 @@ class Leaderboard extends Phaser.Scene {
 
   create() {
     this.cameras.main.setBackgroundColor('#fff');
-    console.log('leaderboard');
     this.menuButton = new Button(this, 500, 550, 'blueButton1', 'blueButton2', 'Menu', 'Title');
     const loadMessage = this.add.bitmapText(100, 100, 'arcade', 'Fetching highest scores...').setTint(0x000000);
     ApiModule.readScore().then((scores) => {

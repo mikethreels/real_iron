@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-alert */
 import Phaser from 'phaser';
 import ApiModule from '../objects/api_data';
 import { createAligned } from '../objects/create_aligned';
@@ -9,7 +11,8 @@ export default class SubmitScore extends Phaser.Scene {
 
   create() {
     this.cameras.main.setBackgroundColor('#fff');
-    createAligned(this, 3, 'cityforeground', 0, 1)
+    createAligned(this, 3, 'cityforeground', 0, 1);
+    this.add.image(400, 100, 'white_logo').setScale(0.5);
 
     const element = this.add.dom(400, 600).createFromCache('form_for_username');
     element.setPerspective(800);
