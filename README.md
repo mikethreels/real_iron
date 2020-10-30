@@ -1,7 +1,7 @@
 # STAR WARFARE
 A JavaScript platform game built with Phaser 3.
 
-![screenshot](./src/assets/screenshots/screenshot.png)
+![screenshot](/src/assets/screenshots/screenshot.png)
 ![screenshot2](./src/assets/screenshots/screenshot2.png)
 ![screenshot3](./src/assets/screenshots/screenshot3.png)
 
