@@ -50,13 +50,13 @@ Survive as long as possible and collect as many starts as you can.
 
 #### Atom (The Hero )
 
-![Atom](./src/assets/screenshots/hero.png)
+![Atom](./src/assets/screenshots/hero.PNG)
 
 - Atom doesn't look like much on the outside but don't let looks deceive you.
 
 #### Enemies
 
-![Guard bot](./src/assets/screenshots/enemy.png)
+![Guard bot](./src/assets/screenshots/enemy.PNG)
 
 - The road to victory is filled with Guard bot. Avoid them at all cost
 
