@@ -23,6 +23,7 @@ export default class GameScene extends Phaser.Scene {
   }
 
   create() {
+    localStorage.setItem('score', this.score);
     createAligned(this, 1, 'sky', 0, 4.2);
 
     createAligned(this, 3, 'farBuildings', 0.33, 4);
@@ -98,11 +99,11 @@ export default class GameScene extends Phaser.Scene {
 
   update() {
     if (this.cursors.left.isDown) {
-      this.player.setVelocityX(-640);
+      this.player.setVelocityX(-340);
       this.player.flipX = true;
       this.player.anims.play('left', true);
     } else if (this.cursors.right.isDown) {
-      this.player.setVelocityX(640);
+      this.player.setVelocityX(340);
       this.player.flipX = false;
       this.player.anims.play('right', true);
     } else {

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable import/named */
 /* eslint-disable import/no-extraneous-dependencies */
 import 'jest-canvas-mock';
 import 'phaser';

@@ -1,10 +1,9 @@
 # STAR WARFARE
-A JavaScript space shooting game built with Phaser 3.
+A JavaScript platform game built with Phaser 3.
 
-![screenshot](./src/assets/images/screenshot.png)
-![screenshot2](./src/assets/images/screenshot2.png)
-![screenshot3](./src/assets/images/screenshot3.png)
-![screenshot4](./src/assets/images/screenshot4.png)
+![screenshot](./src/assets/screenshots/screenshot.png)
+![screenshot2](./src/assets/screenshots/screenshot2.png)
+![screenshot3](./src/assets/screenshots/screenshot3.png)
 
 ## Table of Contents
 
@@ -22,7 +21,7 @@ A JavaScript space shooting game built with Phaser 3.
 
 ### Prerequisites
 
-- Using NPM package and JavaScript knoledge to build and test the game.
+- Using NPM package and JavaScript knowledge to build and test the game.
 
 ### Installation
 
@@ -33,96 +32,68 @@ A JavaScript space shooting game built with Phaser 3.
 
 ### Game Concept
 
-It is the year 2025. Space X, in collaboration with Nasa, has been able to develop a spaceship with the capacity to travel all the way to Mars. Once thought as a crazy person, Elon Musk, leads a new adventure and becomes humanity's hope for a better future. On earth, global warming has reached a critical point and thus, the earth will no longer be viable to live in. Mars has become our only hope if we want humanity to survive.
- 
-Elon Musk has reached out to you because of your awesome ability to procrastinate important work playing arcade games.
- 
-If you accept this mission, you'll lead team Mars by navigating our spaceship into the wild and dark space. Our research shows that you’ll have to fight through several obstacles to complete your mission.
- 
-To make things worst, Robo-Mars, the autonomous spaceship that had all of the supplies for the return journey has been hit by an asteroid, leaving supplies all over the universe. Surprisingly, they kept their position and thus your spaceship can recollect them on your way to Mars. The more supplies you capture, the more you'll be likely to have enough resources for the return trip.
- 
-Do you think you can lead your way into Mars?
+In a world taken over by robot boxing there is a small robot called Atom trying to make it in the world of boxing.
+On his journey to get stronger he needs to evade the stronger robots and collect as many stars as possible to get to the end of the game.
+
+Do you think you've got what it takes to make Atom the best robot boxer in the world 
 
 ### Main Objective
 
-Survive as long as possible and destroy as many obstacles / enemies as you can. Try to get to mars at all costs.
+Survive as long as possible and collect as many starts as you can.
 
 ### How to play
 
-- To move the Mars spaceship you should use the 'left' and 'right' arrow keys on your keyboard.
-- Accelerate by pressing the 'up' arrow on your keyboard.
-- Slow down by pessing the 'down' arrow on your keyboard.
-- Shoot your power gun by pressing the 'space' bar on your keyword
-- Destroy obstacles or enemies in order to increase your score for the return mission.
-- Avoid all obstacles to keep your team alive.
+- To move Atom you should use the 'left' and 'right' arrow keys on your keyboard.
+- Jump by pressing the 'up' arrow on your keyboard.
+- Collect stars in order to increase your score to become the best robot boxer.
+- Avoid all obstacles to keep Atom alive.
 
-#### Marsian (The Spaceship )
+#### Atom (The Hero )
 
-![Marsian](./src/assets/images/animation_player/1.png)
+![Atom](./src/assets/screenshots/hero.png)
 
-- Marsian was build with the latest technology.
+- Atom doesn't look like much on the outside but don't let looks deceive you.
 
 #### Enemies
 
-#### Space Garbage turn into fire
+![Guard bot](./src/assets/screenshots/enemy.png)
 
-![Space storm](./src/assets/images/animation_garbage/garbage_0.png)
+- The road to victory is filled with Guard bot. Avoid them at all cost
 
-- Storms are the worst. You must travel through them avoiding any mortal collision.
+#### Stars
 
-#### Asteroids frontiers
+![Star](./src/assets/star.png)
 
-![Asteroids](./src/assets/images/asteroids/asteroid1.png)
-
-- Space is full of asteroids. Avoid them at all cost. 
-
-#### Ufo
-
-![UFO](./src/assets/images/animation_ufo/1.png)
-
-- UFO's have been detected. They seem harmful and will try to sabotage this mission as they want to conquer Mars as well.
-
-#### Magnet
-
-![Magnetic bugs](./src/assets/images/magnet/magnet.png)
-
-- Human garbage send into space has muted into magnetic bugs. These will feel atracted to the spaceship and make your spacecraft heavier and more prompt to collide with other space items. 
-
-#### Trooper
-
-![The Martian Troppers](./src/assets/images/animation_boss/1.png)
-
-- Some UFO leader has been detected, guarding Mars Orbit. They will try to destroy our ship at all cost.
+- Collect as much stars as possible.
 
 ## Demo
 
-[Live Demo](https://starwarfare.netlify.app/)
+[Live Demo](https://real-iron.netlify.app/)
 
 ## Game Development Stages
 
 - **Day 1**
 **Learn Phaser 3 module**
- I code along the Phaser 3 space shooter tutorial learning the basics about how to structure the project. I setup as well the current repo, installing Webpack and Phaser 3, thinking about the game logic. Manage to complete this steps without any problems.
+ I code along the Phaser 3 platform game tutorial learning the basics about how to structure the project. I setup as well the current repo, installing Webpack and Phaser 3, thinking about the game logic. Manage to complete this steps without any problems.
 
 - **Day 2**
 **Game Design**
- Pulish the game concept, define the characters and main objective. Look for assets to implement all of the game scenes. Define the game rules and logic. Work on the storytelling to make it attractive. Plan the development of the game in specific chunks of user stories converted to technical tasks to be done. 
-  - Game Concept (Done)
-  - Characters (Done)
-  - Main Objective (Done)
-  - Define Game Logic (Done)
-  - Implementation Plan (Done)
-  - Define Assets (Done)
+ Pulish the game concept, define the characters and main objective. Look for assets to implement all of the game scenes. Define the game rules and logic. Plan the development of the game in specific chunks of user stories converted to technical tasks to be done. 
+  - Game Concept 
+  - Characters 
+  - Main Objective 
+  - Define Game Logic 
+  - Implementation Plan 
+  - Define Assets 
 
 - **Day 3**
 **Scene Development**
-  - Implement main menu (Done. Finished on Day 4)
-  - Implemente main game (Done. Finished on Day 4)
+  - Implement main menu 
+  - Implemente main game 
 
 - **Day 4**
 **Game Development**
-  - Implement leaderboard menu (Done. Finished on day 5)
-  - Implement menu (Done)
+  - Implement leaderboard menu
 
 - **Day 5**
 **Deployment**
@@ -134,10 +105,10 @@ Survive as long as possible and destroy as many obstacles / enemies as you can. 
 After developing the game and looking back at the initial plan, conceived on the second day these are some reflections about my development.
 
 What went wrong?
-Overall, I assume Phaser would be easier. However, it's documentation is confusing (mixed between different versions) and not cohesive enough. This meant a lot of time was invested in googling how to work around specific things, such as animation and tweens. This was not easy at all and very time consuming. The provided examples and tutorial didn't seem enough. 
+Overall, I assume Phaser would be easier. However, it's documentation is confusing (mixed between different versions) and not cohesive enough. This meant a lot of time was invested in googling how to work around specific things, such as animations and implementing forms. This was not easy at all and very time consuming. The provided examples and tutorial didn't seem enough. 
 
 What went well?
-Organizing my JS files seemed good for a quick MVP game. However, the main game file can be decoupled for future versions as the game is developed into further features. 
+Creating the game itself went really well.. 
 
 ## Built With
 - Javascript
@@ -163,20 +134,10 @@ You can do it on [issues page](issues/).
 
 ## Acknowledgments
 
-Audio is credited to the following authors:
-- Menu song -> Epic Journey by Yung Logos
-- Game song, stage 1 -> Chariots of War by Aakash Gandhi
-- Final song -> Soaring High by Biz Baz Studio
-- Game Over song -> No.4 Piano Journey
-- Final scene photo by Nicolas Lobos from Unplash
-- Game Over scene photo by Mohammad Alizade from Unplash
-- Main Menu scene photo by Guillermo Ferla from Unplash
-
-Special thanks to Microverse community:
-- Ocicats team
-- Daniel Santander
-- Murilo Roque
-- Jose Roberto Perez Jimenez
+Special thanks for inspiration and motivation to Microverse community:
+- Team The Manx
+- Santiago Rodriguez Bermudez
+- Carlos Prieto Barron
 
 ## Show your support
 
@@ -184,10 +145,10 @@ Give a ⭐️ if you like this project!
 
 ## Author
 
-👤 Santiago Rodriguez
-- Github: [@santiagorodriguezbermudez](https://github.com/santiagorodriguezbermudez)
-- Twitter: [@srba87](https://twitter.com/srba87)
-- Linkedin: [srba87](https://linkedin.com/in/srba)
+👤 Michael Threels
+- Github: [@mikethreels](https://github.com/mikethreels)
+- Twitter: [@MichaelThreels](https://twitter.com/MichaelThreels)
+- LinkedIn :[michaelthreels](https://www.linkedin.com/in/michael-threels)
 
 ## License
 
