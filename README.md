@@ -105,7 +105,7 @@ Survive as long as possible and collect as many starts as you can.
 After developing the game and looking back at the initial plan, conceived on the second day these are some reflections about my development.
 
 What went wrong?
-Overall, I assume Phaser would be easier. However, it's documentation is confusing (mixed between different versions) and not cohesive enough. This meant a lot of time was invested in googling how to work around specific things, such as animations and implementing forms. This was not easy at all and very time consuming. The provided examples and tutorial didn't seem enough. 
+Overall, I assume Phaser would be easier. It's documentation is confusing and not cohesive enough. This meant a lot of time was invested in googling how to work around specific things, such as animations and implementing forms. This was not easy at all and very time consuming. The provided examples and tutorial didn't seem enough. 
 
 What went well?
 Creating the game itself went really well.. 

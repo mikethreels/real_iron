@@ -75,7 +75,7 @@ export default class GameScene extends Phaser.Scene {
     });
 
     this.physics.add.overlap(this.player, this.stars, collectStar, null, this);
-    function collectStar(star) {
+    function collectStar(player, star) {
       star.disableBody(true, true);
       this.score += 10;
       this.scoreText.setText(`Score: ${this.score}`);
