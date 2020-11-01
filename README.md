@@ -25,7 +25,7 @@ A JavaScript platform game built with Phaser 3.
 
 ### Installation
 
-- Fork this repository into your own account
+- Clone this repository into your own account
 - Run npm install to run all of the dependencies into your local repository
 - Run the command 'npm start' to start the game running into your local machine.
 - Finally, open [http://localhost:3000/](http://localhost:3000/) on your browser.
