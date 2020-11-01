@@ -20,8 +20,8 @@ class Leaderboard extends Phaser.Scene {
       highestValues.forEach((currentScore, index) => {
         this.add.bitmapText(100, 90 * (index + 1), 'arcade', ` ${index + 1}     ${currentScore.score}   ${currentScore.user}`).setTint(0x000000).setScale(0.5);
       });
-    }).catch((error) => {
-      alert(`Unable to get the leaderboard: ${error}`);
+    }).catch(() => {
+      alert('Unable to get the leaderboard');
     });
   }
 }
