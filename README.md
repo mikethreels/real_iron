@@ -1,4 +1,4 @@
-# STAR WARFARE
+# Real Iron
 A JavaScript platform game built with Phaser 3.
 
 ![screenshot](./src/assets/screenshots/screenshot.PNG)
